@@ -8,8 +8,8 @@ import java.util.*;
 public class Module {
     public String modName;
     public String modID;
-    ArrayList<Student> students = new ArrayList<Student>();
-    ArrayList<Course> courses = new ArrayList<Course>();
+    public ArrayList<Student> students = new ArrayList<Student>();
+    public ArrayList<Course> courses = new ArrayList<Course>();
     
     public Module(String modName, String modID, ArrayList<Student> students, ArrayList<Course> courses){
         this.modName = modName;

@@ -13,8 +13,8 @@ public class Student {
     public LocalDate DOB;
     public String ID;
     public String uName;
-    ArrayList<Course> courses = new ArrayList<Course>();
-    ArrayList<Module> modules = new ArrayList<Module>();
+    public ArrayList<Course> courses = new ArrayList<Course>();
+    public ArrayList<Module> modules = new ArrayList<Module>();
     
     public Student(String name, int age, LocalDate DOB, String ID, ArrayList<Course> courses, ArrayList<Module> modules){
         this.name = name;
