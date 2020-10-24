@@ -16,18 +16,19 @@ public class Student {
     ArrayList<Course> courses = new ArrayList<Course>();
     ArrayList<Module> modules = new ArrayList<Module>();
     
-    public Student(String name, int age, LocalDate DOB, String ID, String uName, ArrayList<Course> courses, ArrayList<Module> modules){
+    public Student(String name, int age, LocalDate DOB, String ID, ArrayList<Course> courses, ArrayList<Module> modules){
         this.name = name;
         this.age = age;
         this.DOB = DOB;
         this.ID = ID;
-        this.uName = uName;
+        uName = getUsername();
         this.courses = courses;
         this.modules = modules;                
     }
     
     public String getUsername(){
-        String username = uName + Integer.toString(age);
+    	String names[] = name.toLowerCase().split(" ");
+        String username =  names[0] + names[1]+ Integer.toString(age);
         return username;
     }
 }

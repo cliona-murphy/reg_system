@@ -32,8 +32,8 @@ public class RegSystemTest {
 	@Before
 	public void setUp() throws Exception { 
 		DOB = new LocalDate(23/10/2020);
-		s1 = new Student("Sean Byrne", 21, DOB, "123", "s.byrne", courses, compModules);
-		s2 = new Student("Tara Blake", 21, DOB, "124", "t.blake", courses, compModules);
+		s1 = new Student("Sean Byrne", 21, DOB, "123", courses, compModules);
+		s2 = new Student("Tara Blake", 21, DOB, "124", courses, compModules);
 		compStudents.add(s1);
 		compStudents.add(s2);
 		
@@ -50,7 +50,7 @@ public class RegSystemTest {
 
 	@Test
 	public void test() {
-		assertEquals("s.byrne21", s1.getUsername());
+		assertEquals("seanbyrne21", s1.getUsername());
 	}
 
 }
